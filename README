@@ -1,0 +1,13 @@
+These files contain the data, scripts, and resulting plots for the Cell Hackers R plotting workshop help on 3/10/2015.
+
+Data Files: (all are tab delimited)
+'vgene_heavy_timecourse_expression' - This is a data file that contains the expression level for each antibody V genes on the heavy chain. It has this expression level for 11 consecutive days after a vaccination. Each row represents a gene, and each column represents a time-point (i.e. day).
+'allele_frequency_trajectories' - This is a data file that is MUCH larger. Should be handled with care. These data are formatted similarly, but represent something much different. Here, we ran many simulations of the trajectory of an allele over many generations in a rapidly growing population. Each row represents 1 simulation, and each column is 1 generation (i.e. time-point).
+'vgene_heavy_timecourse_expression_ggplot_friendly_dataframe' - This data file is the result of using 'parse.data.for.ggplot()' in 'plotting_functions.R' to parse the data contained in 'vgene_heavy_timecourse_expression' so that it is amenable for ggplot plotting
+
+Scripts:
+'plotting_functions.R' - This is a collection of R scripts that will make various plots using the datafiles as input. Note that only the 1st script can use 'allele_frequency_trajectories' as input.
+
+.pdf files:
+These are the resulting plots from the R scripts
+ 
